@@ -1,7 +1,7 @@
 import React from 'react';
 import {connect} from 'react-redux';
 
-import {newGame, toggleInfoModal} from '../actions';
+import {newGame, toggleInfoModal} from '../actions/actions';
 
 import './top-nav.css';
 

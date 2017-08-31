@@ -1,11 +1,12 @@
 import React from 'react';
+import {connect} from 'react-redux';
 
 import Header from './header';
 import GuessSection from './guess-section';
 import GuessCount  from './guess-count';
 import GuessList from './guess-list';
 
-export default function Game(props) {
+export function Game(props) {
     return (
         <div>
             <Header />
@@ -15,4 +16,9 @@ export default function Game(props) {
         </div>
     );
 };
+
+export default connect(
+	(store) => {
+		return store;
+	})(Game);
 
